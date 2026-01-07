@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Feedback</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="content">
+    <h2>Give Your Feedback</h2>
+
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label>Rating:</label>
+        <select id="rating" required>
+            <option value="">Select</option>
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <textarea id="message" placeholder="Your feedback..." required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h2>What Students Say</h2>
+    <div id="feedbackList"></div>
+</section>
+
+<footer>
+    <p>© 2026 CSE Department</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
